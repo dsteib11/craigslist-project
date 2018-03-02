@@ -1,7 +1,75 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   font-family: 'Roboto', sans-serif;
-  background: lightblue;
+  background-image:  linear-gradient(135deg, rgba(9,137,235,.7) 0%, rgba(20,181,25,.5) 100%), url("http://omire.net/upload/images/5808d37e36d61.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+
+}
+
+header {
+  padding: 20px;
+  display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ color: lightgrey;
+ font-weight: 500;
+ text-transform: capitalize;
+
+ .fas {
+   margin-left: 10px;
+ }
+
+ .left-menu {
+   display: flex;
+   
+   .logo {
+     font-size: 2rem; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+  }
+ }
+
+ .right-menu {
+  display: flex;
+  
+    .user-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background: yellow;
+    color: grey;
+  }
+}
+
 }

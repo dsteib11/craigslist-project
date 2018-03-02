@@ -1,9 +1,7 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
-import Header from './includes/Header.js'
-import Home from './pages/Home.js'
 
-export default class App extends Component {
+export default class Header extends Component {
   constructor () {
     super()
     this.state = {
@@ -15,9 +13,12 @@ export default class App extends Component {
   }
   render () {
     return (
-      <div>
-        <Header />
-        <Home />
-    </div>) 
+      <div> 
+        <h1>
+          Welcome to Craigslist..<br/>
+          We Can Help..
+        </h1>
+      </div>
+    )
   }
 }
