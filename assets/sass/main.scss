@@ -8,7 +8,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-image:  linear-gradient(135deg, rgba(9,137,235,.7) 0%, rgba(20,181,25,.5) 100%), url("http://omire.net/upload/images/5808d37e36d61.jpg");
+  background-image:  linear-gradient(135deg, rgba(9,137,235,.7) 0%, rgba(21, 189, 26, 0.8) 100%), url("http://omire.net/upload/images/5808d37e36d61.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -47,29 +47,29 @@ header {
   }
  }
 
- .right-menu {
-  display: flex;
-  
-    .user-img {
+  .right-menu {
+    display: flex;
+    
+      .user-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .user-dropdown {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .user-dropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .post-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      background: yellow;
+      color: grey;
+    }
   }
-
-  .post-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    background: yellow;
-    color: grey;
-  }
-}
 
 }

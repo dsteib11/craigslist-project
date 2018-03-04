@@ -135,27 +135,123 @@ var Header = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
     _this.clickedBtn = function () {
-      console.log('swag');
+      console.log("swag");
+    };
+
+    _this.loopCategories = function () {
+      var testArray = [1, 2, 3, 4, 5, 6, 7];
+
+      return testArray.map(function () {
+        return _react2.default.createElement(
+          "div",
+          { className: "category" },
+          _react2.default.createElement(
+            "div",
+            { className: "title" },
+            "Community"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "group-links" },
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Community"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "General"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Activities"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Groups"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Artists"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Local News"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Childcare"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Lost + Found"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Classes"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Musicians"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Events"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "link" },
+              "Pets"
+            )
+          )
+        );
+      });
     };
 
     _this.state = {
-      name: 'Joe'
+      name: "Joe"
     };
     return _this;
   }
 
   _createClass(Header, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-          'h1',
+          "h1",
           null,
-          'Welcome to Craigslist..',
-          _react2.default.createElement('br', null),
-          'We Can Help..'
+          "Welcome to Craigslist..",
+          _react2.default.createElement("br", null),
+          "We Can Help.."
+        ),
+        _react2.default.createElement(
+          "section",
+          { className: "links" },
+          this.loopCategories()
+        ),
+        _react2.default.createElement(
+          "section",
+          { className: "trending" },
+          _react2.default.createElement("input", { type: "text", name: "search", className: "search" })
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "title" },
+          _react2.default.createElement("i", { className: "far fa-clock" }),
+          " Trending Now.."
         )
       );
     }
