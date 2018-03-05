@@ -15,9 +15,9 @@ export default class Header extends Component {
   loopCategories = () => {
     let testArray = [1, 2, 3, 4, 5, 6, 7];
 
-    return testArray.map(() => {
+    return testArray.map((item, i) => {
       return (
-        <div className="category">
+        <div className="categories" key={i}>
           <div className="title">Community</div>
           <div className="group-links">
             <a href="#" className="link">
@@ -62,19 +62,32 @@ export default class Header extends Component {
     });
   };
 
+  loopTags = () => {
+    let testTags = ['a','b','c','d','e','f','o']
+
+    return testTags.map((item, i) => <div key={i} className="tags">
+    Macbook Air
+  </div>)
+  }
+
   render() {
     return (
-      <div>
-        <h1>
-          Welcome to Craigslist..<br />
-          We Can Help..
-        </h1>
-        <section className={"links"}>{this.loopCategories()}</section>
-        <section className={"trending"}>
-          <input type="text" name="search" className="search" />
-        </section>
-        <div className="title">
-          <i className="far fa-clock"></i> Trending Now..
+      <div className="home">
+        <div className="container">
+            <h1>
+              Welcome to Craigslist..<br />
+              We Can Help..
+            </h1>
+            <section className={"links"}>{this.loopCategories()}</section>
+            <section className={"trending"}>
+              <input type="text" name="search" className="search" />
+            <div className="title">
+              <i className="far fa-clock"></i> Trending Now..
+            </div>
+            <div className="trending-tags">
+              {this.loopTags()}
+            </div>
+            </section>
         </div>
       </div>
     );

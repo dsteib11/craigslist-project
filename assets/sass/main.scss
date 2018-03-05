@@ -1,5 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
+@import "home";
 
 * {
   box-sizing: border-box;
@@ -26,8 +27,8 @@ header {
  text-transform: capitalize;
 
  .fas {
-   margin-left: 10px;
- }
+  margin-left: 10px
+}
 
  .left-menu {
    display: flex;
@@ -49,17 +50,21 @@ header {
 
   .right-menu {
     display: flex;
-    
+
       .user-img {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 5px;
       }
 
       .user-dropdown {
       display: flex;
       justify-content: center;
       align-items: center;
+      .fas {
+        margin-right: 10px
+      }
     }
 
     .post-btn {
@@ -71,5 +76,9 @@ header {
       color: grey;
     }
   }
+}
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }

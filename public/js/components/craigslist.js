@@ -141,10 +141,10 @@ var Header = function (_Component) {
     _this.loopCategories = function () {
       var testArray = [1, 2, 3, 4, 5, 6, 7];
 
-      return testArray.map(function () {
+      return testArray.map(function (item, i) {
         return _react2.default.createElement(
           "div",
-          { className: "category" },
+          { className: "categories", key: i },
           _react2.default.createElement(
             "div",
             { className: "title" },
@@ -218,6 +218,18 @@ var Header = function (_Component) {
       });
     };
 
+    _this.loopTags = function () {
+      var testTags = ['a', 'b', 'c', 'd', 'e', 'f', 'o'];
+
+      return testTags.map(function (item, i) {
+        return _react2.default.createElement(
+          "div",
+          { key: i, className: "tags" },
+          "Macbook Air"
+        );
+      });
+    };
+
     _this.state = {
       name: "Joe"
     };
@@ -229,29 +241,38 @@ var Header = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        null,
-        _react2.default.createElement(
-          "h1",
-          null,
-          "Welcome to Craigslist..",
-          _react2.default.createElement("br", null),
-          "We Can Help.."
-        ),
-        _react2.default.createElement(
-          "section",
-          { className: "links" },
-          this.loopCategories()
-        ),
-        _react2.default.createElement(
-          "section",
-          { className: "trending" },
-          _react2.default.createElement("input", { type: "text", name: "search", className: "search" })
-        ),
+        { className: "home" },
         _react2.default.createElement(
           "div",
-          { className: "title" },
-          _react2.default.createElement("i", { className: "far fa-clock" }),
-          " Trending Now.."
+          { className: "container" },
+          _react2.default.createElement(
+            "h1",
+            null,
+            "Welcome to Craigslist..",
+            _react2.default.createElement("br", null),
+            "We Can Help.."
+          ),
+          _react2.default.createElement(
+            "section",
+            { className: "links" },
+            this.loopCategories()
+          ),
+          _react2.default.createElement(
+            "section",
+            { className: "trending" },
+            _react2.default.createElement("input", { type: "text", name: "search", className: "search" }),
+            _react2.default.createElement(
+              "div",
+              { className: "title" },
+              _react2.default.createElement("i", { className: "far fa-clock" }),
+              " Trending Now.."
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "trending-tags" },
+              this.loopTags()
+            )
+          )
         )
       );
     }
