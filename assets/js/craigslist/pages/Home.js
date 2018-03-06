@@ -75,8 +75,8 @@ export default class Header extends Component {
       <div className="home">
         <div className="container">
             <h1>
-              Welcome to Craigslist..<br />
-              We Can Help..
+              Welcome to Craigslist!<br />
+              We can help you with..
             </h1>
             <section className={"links"}>{this.loopCategories()}</section>
             <section className={"trending"}>

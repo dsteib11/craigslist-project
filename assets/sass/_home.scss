@@ -1,4 +1,12 @@
 .home {
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color:lightgrey;
+    text-align: center;
+    padding: 75px 0;
+    text-transform: capitalize;
+  }
   .links {
     background: rgba(0,0,0,.5);
     display: grid;
@@ -24,7 +32,7 @@
         margin-bottom: .5rem;
         text-decoration: none;
         &:hover {
-          color: green;
+          color: yellow;
         }
       }
     }
@@ -53,10 +61,20 @@
   }
 
   .trending-tags {
+    text-align: center;
     .tags {
-      padding: 15px 30px;
+      padding: 10px 15px;
       border-radius: 45px;
       border: 1px solid #fff;
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+      &:hover {
+        background: blue;
+        color: yellow;
+      }
     }
   }
 }

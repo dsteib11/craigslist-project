@@ -13,6 +13,9 @@ const app =  express()
 // CREATE MIDDLEWARE TO HANDLE THE SERVING OF THE APP
 
 app.use('/', serveStatic(path.join(__dirname, '/public')))
+app.get('*', function(req, res){
+  res.sendFile(__dirname + '/public/index.html')
+})
 
 // CREATE DEFAULT PORT TO SERVE THE APP 
 
