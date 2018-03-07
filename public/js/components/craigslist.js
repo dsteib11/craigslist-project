@@ -34,13 +34,13 @@ var _Listings = __webpack_require__(123);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _Items = __webpack_require__(122);
+var _Category = __webpack_require__(120);
 
-var _Items2 = _interopRequireDefault(_Items);
+var _Category2 = _interopRequireDefault(_Category);
 
-var _Categories = __webpack_require__(120);
+var _Item = __webpack_require__(122);
 
-var _Categories2 = _interopRequireDefault(_Categories);
+var _Item2 = _interopRequireDefault(_Item);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -62,9 +62,7 @@ var App = function (_Component) {
       console.log('swag');
     };
 
-    _this.state = {
-      name: 'Joe'
-    };
+    _this.state = {};
     return _this;
   }
 
@@ -79,9 +77,10 @@ var App = function (_Component) {
           null,
           _react2.default.createElement(_Header2.default, null),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/', component: _Categories2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city', component: _Home2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category', component: _Category2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings', component: _Listings2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:items', component: _Items2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:item', component: _Item2.default })
         )
       );
     }
@@ -246,19 +245,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Categories = function (_Component) {
-  _inherits(Categories, _Component);
+var Category = function (_Component) {
+  _inherits(Category, _Component);
 
-  function Categories() {
-    _classCallCheck(this, Categories);
+  function Category() {
+    _classCallCheck(this, Category);
 
-    var _this = _possibleConstructorReturn(this, (Categories.__proto__ || Object.getPrototypeOf(Categories)).call(this));
+    var _this = _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).call(this));
 
     _this.state = {};
     return _this;
   }
 
-  _createClass(Categories, [{
+  _createClass(Category, [{
     key: "render",
     value: function render() {
       var _props = this.props,
@@ -268,21 +267,21 @@ var Categories = function (_Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "categories" },
+        { className: "category" },
         _react2.default.createElement(
           "div",
           { className: "container" },
-          "this item is ",
-          match.params.categories
+          "category is ",
+          match.params.category
         )
       );
     }
   }]);
 
-  return Categories;
+  return Category;
 }(_react.Component);
 
-exports.default = Categories;
+exports.default = Category;
 
 /***/ }),
 
@@ -418,9 +417,7 @@ var Header = function (_Component) {
       });
     };
 
-    _this.state = {
-      name: "Joe"
-    };
+    _this.state = {};
     return _this;
   }
 
@@ -501,19 +498,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Items = function (_Component) {
-  _inherits(Items, _Component);
+var Item = function (_Component) {
+  _inherits(Item, _Component);
 
-  function Items() {
-    _classCallCheck(this, Items);
+  function Item() {
+    _classCallCheck(this, Item);
 
-    var _this = _possibleConstructorReturn(this, (Items.__proto__ || Object.getPrototypeOf(Items)).call(this));
+    var _this = _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).call(this));
 
     _this.state = {};
     return _this;
   }
 
-  _createClass(Items, [{
+  _createClass(Item, [{
     key: "render",
     value: function render() {
       var _props = this.props,
@@ -523,21 +520,21 @@ var Items = function (_Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "items" },
+        { className: "Item" },
         _react2.default.createElement(
           "div",
           { className: "container" },
-          "this item is ",
+          "This item is ",
           match.params.item
         )
       );
     }
   }]);
 
-  return Items;
+  return Item;
 }(_react.Component);
 
-exports.default = Items;
+exports.default = Item;
 
 /***/ }),
 
@@ -591,8 +588,13 @@ var Listings = function (_Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "listings" },
-        _react2.default.createElement("div", { className: "container" })
+        { className: "Listings" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          "Listings: ",
+          match.params.listings
+        )
       );
     }
   }]);

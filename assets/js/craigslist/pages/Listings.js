@@ -10,13 +10,13 @@ export default class Listings extends Component {
   }
 
   render() {
-    const {match, location, history} = this.props
+    const {match, location, history } = this.props
     return (
-      <div className="listings">
+      <div className="Listings">
         <div className="container">
-        
+         Listings: {match.params.listings}
         </div>
       </div>
-    );
+    )
   }
 }
