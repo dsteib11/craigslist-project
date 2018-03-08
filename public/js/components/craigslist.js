@@ -588,7 +588,7 @@ var Listings = function (_Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "listings" },
+        { className: "listings-page" },
         _react2.default.createElement(
           "div",
           { className: "container" },
@@ -604,21 +604,25 @@ var Listings = function (_Component) {
                 "Price"
               ),
               _react2.default.createElement(
-                "select",
-                { name: "min-price", className: "min-price" },
+                "div",
+                { className: "min-max" },
                 _react2.default.createElement(
-                  "option",
-                  { value: "1" },
-                  "1000"
-                )
-              ),
-              _react2.default.createElement(
-                "select",
-                { name: "max-price", className: "max-price" },
+                  "select",
+                  { name: "min-price", className: "min-price" },
+                  _react2.default.createElement(
+                    "option",
+                    { value: "1" },
+                    "1000"
+                  )
+                ),
                 _react2.default.createElement(
-                  "option",
-                  { value: "1" },
-                  "0"
+                  "select",
+                  { name: "max-price", className: "max-price" },
+                  _react2.default.createElement(
+                    "option",
+                    { value: "1" },
+                    "0"
+                  )
                 )
               )
             ),
@@ -676,78 +680,86 @@ var Listings = function (_Component) {
                 )
               )
             )
-          ),
+          )
+        ),
+        _react2.default.createElement(
+          "section",
+          { id: "list-view" },
           _react2.default.createElement(
-            "section",
-            { className: "list-view" },
+            "div",
+            { className: "container" },
             _react2.default.createElement(
-              "section",
-              { className: "change-view" },
+              "div",
+              { className: "white-box" },
               _react2.default.createElement(
-                "div",
-                { className: "form-group view-dropdown" },
+                "section",
+                { className: "change-view" },
                 _react2.default.createElement(
-                  "select",
-                  { name: "select-view", className: "select-view" },
+                  "div",
+                  { className: "form-group view-dropdown" },
                   _react2.default.createElement(
-                    "option",
-                    { value: "gallery" },
-                    "Gallery View"
-                  ),
+                    "select",
+                    { name: "select-view", className: "select-view" },
+                    _react2.default.createElement(
+                      "option",
+                      { value: "gallery" },
+                      "Gallery View"
+                    ),
+                    _react2.default.createElement(
+                      "option",
+                      { value: "list" },
+                      "List View"
+                    ),
+                    _react2.default.createElement(
+                      "option",
+                      { value: "thumb" },
+                      "List View"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "form-group sort-dropdown" },
                   _react2.default.createElement(
-                    "option",
-                    { value: "list" },
-                    "List View"
-                  ),
-                  _react2.default.createElement(
-                    "option",
-                    { value: "thumb" },
-                    "List View"
+                    "select",
+                    { name: "sort-view", className: "sort-view" },
+                    _react2.default.createElement(
+                      "option",
+                      { value: "gallery" },
+                      "Newest"
+                    )
                   )
                 )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "form-group sort-dropdown" },
-                _react2.default.createElement(
-                  "select",
-                  { name: "sort-view", className: "sort-view" },
-                  _react2.default.createElement(
-                    "option",
-                    { value: "gallery" },
-                    "Newest"
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "section",
-              { className: "all-items" },
-              _react2.default.createElement(
-                "div",
-                { className: "item" },
+                "section",
+                { className: "all-items" },
                 _react2.default.createElement(
                   "div",
-                  { className: "image" },
+                  { className: "item" },
                   _react2.default.createElement(
                     "div",
-                    { className: "price" },
-                    "$9000"
-                  ),
-                  "Image"
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "details" },
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Title"
+                    { className: "image" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "price" },
+                      "$9000"
+                    ),
+                    "Image"
                   ),
                   _react2.default.createElement(
-                    "h6",
-                    null,
-                    "City"
+                    "div",
+                    { className: "details" },
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Title"
+                    ),
+                    _react2.default.createElement(
+                      "h6",
+                      null,
+                      "City"
+                    )
                   )
                 )
               )
