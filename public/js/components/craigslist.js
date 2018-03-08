@@ -80,7 +80,7 @@ var App = function (_Component) {
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city', component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category', component: _Category2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings', component: _Listings2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:details', component: Details })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:item', component: _Details2.default })
         )
       );
     }
@@ -339,8 +339,162 @@ var Details = function (_Component) {
         _react2.default.createElement(
           "div",
           { className: "container" },
-          "This item is ",
-          match.params.item
+          _react2.default.createElement(
+            "section",
+            { className: "submenu" },
+            _react2.default.createElement("div", { className: "direction" }),
+            _react2.default.createElement(
+              "div",
+              { className: "direction" },
+              _react2.default.createElement(
+                "div",
+                { className: "prev" },
+                "Prev"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "next" },
+                "Next"
+              )
+            ),
+            _react2.default.createElement(
+              "nav",
+              { className: "sub-links" },
+              _react2.default.createElement(
+                "a",
+                { href: "#" },
+                "More Ads by User"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "#" },
+                "Print"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "#" },
+                "Share"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "#" },
+                "Contact Share"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement(
+              "div",
+              { className: "media-column" },
+              _react2.default.createElement(
+                "div",
+                { className: "gallery" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "slider" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-image" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "left-arrow" },
+                      "Left-Arrow"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "right-arrow" },
+                      "Right-Arrow"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "thumbnails" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "thumb-image" },
+                    "Image"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "details-column" },
+              _react2.default.createElement(
+                "div",
+                { className: "date" },
+                "Mar 8th"
+              ),
+              _react2.default.createElement(
+                "h3",
+                null,
+                "2013 Jeep Wrangler Rubicon"
+              ),
+              _react2.default.createElement(
+                "h4",
+                { className: "price" },
+                "$30000"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "more-details" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Vin"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "sdfjkgnskdngs"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Milage"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "30054"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Transmission"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "6 Speed Automatic"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "discription" },
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "The discription goes here"
+                )
+              )
+            )
+          )
         )
       );
     }

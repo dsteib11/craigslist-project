@@ -95,6 +95,6 @@ export default class Listings extends Component {
           </div>
         </section>
       </div>
-    );
+    )
   }
 }
