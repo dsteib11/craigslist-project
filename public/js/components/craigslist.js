@@ -26,7 +26,7 @@ var _Header = __webpack_require__(119);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Home = __webpack_require__(121);
+var _Home = __webpack_require__(122);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -38,9 +38,9 @@ var _Category = __webpack_require__(120);
 
 var _Category2 = _interopRequireDefault(_Category);
 
-var _Item = __webpack_require__(122);
+var _Details = __webpack_require__(121);
 
-var _Item2 = _interopRequireDefault(_Item);
+var _Details2 = _interopRequireDefault(_Details);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -80,7 +80,7 @@ var App = function (_Component) {
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city', component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category', component: _Category2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings', component: _Listings2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:item', component: _Item2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/:city/:category/:listings/:details', component: Details })
         )
       );
     }
@@ -313,6 +313,74 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Details = function (_Component) {
+  _inherits(Details, _Component);
+
+  function Details() {
+    _classCallCheck(this, Details);
+
+    var _this = _possibleConstructorReturn(this, (Details.__proto__ || Object.getPrototypeOf(Details)).call(this));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Details, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          match = _props.match,
+          location = _props.location,
+          history = _props.history;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "details-page" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          "This item is ",
+          match.params.item
+        )
+      );
+    }
+  }]);
+
+  return Details;
+}(_react.Component);
+
+exports.default = Details;
+
+/***/ }),
+
+/***/ 122:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(16);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Header = function (_Component) {
   _inherits(Header, _Component);
 
@@ -470,74 +538,6 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 122:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(16);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Item = function (_Component) {
-  _inherits(Item, _Component);
-
-  function Item() {
-    _classCallCheck(this, Item);
-
-    var _this = _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).call(this));
-
-    _this.state = {};
-    return _this;
-  }
-
-  _createClass(Item, [{
-    key: "render",
-    value: function render() {
-      var _props = this.props,
-          match = _props.match,
-          location = _props.location,
-          history = _props.history;
-
-      return _react2.default.createElement(
-        "div",
-        { className: "Item" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          "This item is ",
-          match.params.item
-        )
-      );
-    }
-  }]);
-
-  return Item;
-}(_react.Component);
-
-exports.default = Item;
-
-/***/ }),
-
 /***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -573,6 +573,42 @@ var Listings = function (_Component) {
     _classCallCheck(this, Listings);
 
     var _this = _possibleConstructorReturn(this, (Listings.__proto__ || Object.getPrototypeOf(Listings)).call(this));
+
+    _this.loopItems = function () {
+      var testArray = [1, 2, 3, 4, 5, 6, 7];
+
+      return testArray.map(function (item, i) {
+        return _react2.default.createElement(
+          "div",
+          { className: "item" },
+          _react2.default.createElement(
+            "div",
+            { className: "image" },
+            _react2.default.createElement(
+              "div",
+              { className: "price" },
+              "$20000"
+            ),
+            "Image"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "details" },
+            _react2.default.createElement("i", { className: "far fa-star" }),
+            _react2.default.createElement(
+              "h5",
+              null,
+              "Jeep Wrangler"
+            ),
+            _react2.default.createElement(
+              "h6",
+              null,
+              "Atlanta"
+            )
+          )
+        );
+      });
+    };
 
     _this.state = {};
     return _this;
@@ -734,34 +770,7 @@ var Listings = function (_Component) {
               _react2.default.createElement(
                 "section",
                 { className: "all-items" },
-                _react2.default.createElement(
-                  "div",
-                  { className: "item" },
-                  _react2.default.createElement(
-                    "div",
-                    { className: "image" },
-                    _react2.default.createElement(
-                      "div",
-                      { className: "price" },
-                      "$9000"
-                    ),
-                    "Image"
-                  ),
-                  _react2.default.createElement(
-                    "div",
-                    { className: "details" },
-                    _react2.default.createElement(
-                      "h5",
-                      null,
-                      "Title"
-                    ),
-                    _react2.default.createElement(
-                      "h6",
-                      null,
-                      "City"
-                    )
-                  )
-                )
+                this.loopItems()
               )
             )
           )

@@ -111,16 +111,33 @@
 
             padding: 10px;
 
+            .fa-star {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              font-size: 1.3rem;
+              color: rgb(236, 236, 11);
+
+              &:hover {
+                color: turquoise;
+                cursor: pointer;
+              }
+
+            }
+
             h5 {
               color: #3e0bca;
               font-size: 1.2rem;
               line-height: 1.5rem;
               margin-bottom: 5px;
+              text-transform: capitalize;
+              position: relative;
             }
 
             h6 {
               color: #444242;
               font-size: 0.9rem;
+              text-transform: capitalize;
             }
           }
         }
