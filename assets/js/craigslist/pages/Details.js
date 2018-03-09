@@ -32,16 +32,14 @@ export default class Details extends Component {
               <div className="media-column">
                 <div className="gallery">
                   <div className="slider">
-                    <div className="main-image">
-                      <div className="left-arrow">
-                        Left-Arrow
+                    <div className="main-img">
+                      <div className="arrows left-arrow">
+                        {"<"}
                       </div>
-                      <div className="right-arrow">
-                        Right-Arrow
+                      <div className="arrows right-arrow">
+                        {">"}
                       </div>
-                      <div className="img-1">
-                        Main img
-                      </div>
+                      <div className="img-1"></div>
                     </div>
                   </div>
 

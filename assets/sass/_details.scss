@@ -37,15 +37,52 @@
     .media-column {
 
       .gallery {
+        .slider {
+          .main-img {
+            position: relative;
+
+            .arrows {
+              top: 0;
+              bottom:0;
+              height: 100%;
+              width: 80px;
+              position: absolute;
+              background: rgba(0,0,0, .7);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+              font-size: 40px;
+
+              &.left-arrow {
+                left: 0;
+              }
+
+              &.right-arrow {
+                right: 0;
+              }
+            }
+
+            .img-1 {
+              background: url("https://c1.staticflickr.com/5/4099/4899292005_4823ff38b0_b.jpg");
+              height: 400px;
+              width: 100%;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              padding: 10px;
+              margin: 20px 0;
+            }
+          }
+        }
         .thumbnails {
           display: grid;
           grid-template-columns: repeat(6,1fr);
           grid-gap: 10px;
           .thumb-img {
+            background: url("https://images.craigslist.org/00B0B_c0ua6ngWqKr_300x300.jpg");
+            height: 100px;
             width: 100px;
-            height: 100px;
-            background: url("https://images.craigslist.org/00D0D_36HVuI4NZZu_300x300.jpg");
-            height: 100px;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;

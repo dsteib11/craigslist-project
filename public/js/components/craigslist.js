@@ -398,22 +398,18 @@ var Details = function (_Component) {
                     { className: "slider" },
                     _react2.default.createElement(
                       "div",
-                      { className: "main-image" },
+                      { className: "main-img" },
                       _react2.default.createElement(
                         "div",
-                        { className: "left-arrow" },
-                        "Left-Arrow"
+                        { className: "arrows left-arrow" },
+                        "<"
                       ),
                       _react2.default.createElement(
                         "div",
-                        { className: "right-arrow" },
-                        "Right-Arrow"
+                        { className: "arrows right-arrow" },
+                        ">"
                       ),
-                      _react2.default.createElement(
-                        "div",
-                        { className: "img-1" },
-                        "Main img"
-                      )
+                      _react2.default.createElement("div", { className: "img-1" })
                     )
                   ),
                   _react2.default.createElement(
