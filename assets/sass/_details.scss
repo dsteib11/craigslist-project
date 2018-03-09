@@ -1,0 +1,59 @@
+.details-page {
+  background: lightgray;
+  padding: 20px;
+  .white-box {
+    padding: 20px;
+    background: #fff;
+  }
+
+  .sub-menu {
+    display: flex;
+    justify-content: space-between;
+    
+     a {
+      color: #2c91a3;
+      padding: 20px;
+      text-decoration: none;
+    }
+    
+    .direction{
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .sub-links{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .content-area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+
+
+    .media-column {
+
+      .gallery {
+        .thumbnails {
+          display: grid;
+          grid-template-columns: repeat(6,1fr);
+          grid-gap: 10px;
+          .thumb-img {
+            width: 100px;
+            height: 100px;
+            background: url("https://images.craigslist.org/00D0D_36HVuI4NZZu_300x300.jpg");
+            height: 100px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

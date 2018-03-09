@@ -340,157 +340,200 @@ var Details = function (_Component) {
           "div",
           { className: "container" },
           _react2.default.createElement(
-            "section",
-            { className: "submenu" },
-            _react2.default.createElement("div", { className: "direction" }),
+            "div",
+            { className: "white-box" },
             _react2.default.createElement(
-              "div",
-              { className: "direction" },
+              "section",
+              { className: "sub-menu" },
               _react2.default.createElement(
                 "div",
-                { className: "prev" },
-                "Prev"
+                { className: "direction" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "prev" },
+                  "Prev"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "next" },
+                  "Next"
+                )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "next" },
-                "Next"
+                "nav",
+                { className: "sub-links" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "More Ads by User"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Print"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Share"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Contact Share"
+                )
               )
             ),
             _react2.default.createElement(
-              "nav",
-              { className: "sub-links" },
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "More Ads by User"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Print"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Share"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Contact Share"
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "section",
-            null,
-            _react2.default.createElement(
-              "div",
-              { className: "media-column" },
+              "section",
+              { className: "content-area" },
               _react2.default.createElement(
                 "div",
-                { className: "gallery" },
+                { className: "media-column" },
                 _react2.default.createElement(
                   "div",
-                  { className: "slider" },
+                  { className: "gallery" },
                   _react2.default.createElement(
                     "div",
-                    { className: "main-image" },
+                    { className: "slider" },
                     _react2.default.createElement(
                       "div",
-                      { className: "left-arrow" },
-                      "Left-Arrow"
+                      { className: "main-image" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "left-arrow" },
+                        "Left-Arrow"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "right-arrow" },
+                        "Right-Arrow"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "img-1" },
+                        "Main img"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "thumbnails" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
                     ),
                     _react2.default.createElement(
                       "div",
-                      { className: "right-arrow" },
-                      "Right-Arrow"
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-img" },
+                      "Image"
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "details-column" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "date" },
+                  "Mar 8th"
+                ),
+                _react2.default.createElement(
+                  "h3",
+                  null,
+                  "2013 Jeep Wrangler Rubicon"
+                ),
+                _react2.default.createElement(
+                  "h4",
+                  { className: "price" },
+                  "$30000"
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "more-details" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Vin"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "sdfjkgnskdngs"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Milage"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "30054"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Transmission"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "6 Speed Automatic"
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "thumbnails" },
+                  { className: "discription" },
                   _react2.default.createElement(
-                    "div",
-                    { className: "thumb-image" },
-                    "Image"
+                    "p",
+                    null,
+                    "The discription goes here"
                   )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "details-column" },
-              _react2.default.createElement(
-                "div",
-                { className: "date" },
-                "Mar 8th"
-              ),
-              _react2.default.createElement(
-                "h3",
-                null,
-                "2013 Jeep Wrangler Rubicon"
-              ),
-              _react2.default.createElement(
-                "h4",
-                { className: "price" },
-                "$30000"
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "more-details" },
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Vin"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "sdfjkgnskdngs"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Milage"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "30054"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Transmission"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "6 Speed Automatic"
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "discription" },
-                _react2.default.createElement(
-                  "p",
-                  null,
-                  "The discription goes here"
                 )
               )
             )
