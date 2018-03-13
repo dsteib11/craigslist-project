@@ -40,19 +40,19 @@
         .slider {
           .main-img {
             position: relative;
-
             .arrows {
               top: 0;
               bottom:0;
               height: 100%;
-              width: 80px;
+              padding: 0 10px;
               position: absolute;
-              background: rgba(0,0,0, .7);
+              background: rgba(0,0,0, .6);
               display: flex;
               align-items: center;
               justify-content: center;
               color: #fff;
-              font-size: 40px;
+              cursor: pointer;
+              font-size: 3rem;
 
               &.left-arrow {
                 left: 0;
@@ -64,7 +64,6 @@
             }
 
             .img-1 {
-              background: url("https://c1.staticflickr.com/5/4099/4899292005_4823ff38b0_b.jpg");
               height: 400px;
               width: 100%;
               background-size: cover;
@@ -80,7 +79,6 @@
           grid-template-columns: repeat(6,1fr);
           grid-gap: 10px;
           .thumb-img {
-            background: url("https://images.craigslist.org/00B0B_c0ua6ngWqKr_300x300.jpg");
             height: 100px;
             width: 100px;
             background-size: cover;
@@ -89,6 +87,62 @@
             position: relative;
             padding: 10px;
           }
+        }
+      }
+    }
+    .details-column {
+      .date {
+        font-size: .9rem;
+        color: #2b2727;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        color: green;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+      label {
+        font-weight: 700;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .more-details {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid lightgray;
+
+        .info {
+
+          h5 {
+            font-size: 1.1rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .description{
+        p {
+          color: #2b2727;
+          line-height: 1.5;
+          font-size: .9rem;
+          margin-bottom: 1.5rem;
         }
       }
     }

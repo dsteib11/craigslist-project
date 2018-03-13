@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Gallery from "./components/Gallery.js";
 
 export default class Details extends Component {
   constructor() {
@@ -30,68 +31,48 @@ export default class Details extends Component {
 
             <section className="content-area">
               <div className="media-column">
-                <div className="gallery">
-                  <div className="slider">
-                    <div className="main-img">
-                      <div className="arrows left-arrow">
-                        {"<"}
-                      </div>
-                      <div className="arrows right-arrow">
-                        {">"}
-                      </div>
-                      <div className="img-1"></div>
-                    </div>
-                  </div>
-
-                  <div className="thumbnails">
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                    <div className="thumb-img">
-                      Image
-                    </div>
-                  </div>
-                </div>
+                <Gallery />
               </div>
 
               <div className="details-column">
-                <div className="date">Mar 8th</div>
+                <div className="date">Mar 8th 2018</div>
                 <h3>2013 Jeep Wrangler Rubicon</h3>
-                <h4 className="price">$30000</h4>
-                <div className="more-details">
-                  <div className="info">
-                    <label>Vin</label>
-                    <h5>sdfjkgnskdngs</h5>
-                  </div>
-                  <div className="info">
-                    <label>Milage</label>
-                    <h5>30054</h5>
-                  </div>
-                  <div className="info">
-                    <label>Transmission</label>
-                    <h5>6 Speed Automatic</h5>
-                  </div>
+                <h4 className="price">$30,000</h4>
+                  <div className="more-details">
+                    <div className="info">
+                      <label>Vin</label>
+                      <h5>sdfjkgnskdngs</h5>
+                    </div>
+                    <div className="info">
+                      <label>Milage</label>
+                      <h5>30054</h5>
+                    </div>
+                    <div className="info">
+                      <label>Transmission</label>
+                      <h5>6 Speed Automatic</h5>
+                    </div>
+
+                    <div className="info">
+                      <label>Vin</label>
+                      <h5>sdfjkgnskdngs</h5>
+                    </div>
+                    <div className="info">
+                      <label>Milage</label>
+                      <h5>30054</h5>
+                    </div>
+                    <div className="info">
+                      <label>Transmission</label>
+                      <h5>6 Speed Automatic</h5>
+                    </div>
                 </div>
-                <div className="discription">
-                  <p>The discription goes here</p>
+                
+                
+                <div className="description">
+                    <label>Description</label>
+                    <p>Lorem ipsum dolor amet chillwave occupy meggings gluten-free ennui gastropub. Kinfolk truffaut cornhole taiyaki tilde mumblecore readymade godard raw denim vinyl. Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard. </p>
+                    <p>Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard.
+                    </p>
+                    <p>Lorem ipsum dolor amet chillwave occupy meggings gluten-free ennui gastropub. Kinfolk truffaut cornhole taiyaki tilde mumblecore readymade godard raw denim vinyl. Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard.</p>
                 </div>
               </div>
             </section>

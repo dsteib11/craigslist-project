@@ -16,11 +16,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(243);
+var _reactRouterDom = __webpack_require__(244);
 
 var _Header = __webpack_require__(119);
 
@@ -103,7 +103,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -135,7 +135,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -233,7 +233,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -301,9 +301,13 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _Gallery = __webpack_require__(124);
+
+var _Gallery2 = _interopRequireDefault(_Gallery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -390,73 +394,7 @@ var Details = function (_Component) {
               _react2.default.createElement(
                 "div",
                 { className: "media-column" },
-                _react2.default.createElement(
-                  "div",
-                  { className: "gallery" },
-                  _react2.default.createElement(
-                    "div",
-                    { className: "slider" },
-                    _react2.default.createElement(
-                      "div",
-                      { className: "main-img" },
-                      _react2.default.createElement(
-                        "div",
-                        { className: "arrows left-arrow" },
-                        "<"
-                      ),
-                      _react2.default.createElement(
-                        "div",
-                        { className: "arrows right-arrow" },
-                        ">"
-                      ),
-                      _react2.default.createElement("div", { className: "img-1" })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "div",
-                    { className: "thumbnails" },
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-img" },
-                      "Image"
-                    )
-                  )
-                )
+                _react2.default.createElement(_Gallery2.default, null)
               ),
               _react2.default.createElement(
                 "div",
@@ -464,7 +402,7 @@ var Details = function (_Component) {
                 _react2.default.createElement(
                   "div",
                   { className: "date" },
-                  "Mar 8th"
+                  "Mar 8th 2018"
                 ),
                 _react2.default.createElement(
                   "h3",
@@ -474,7 +412,7 @@ var Details = function (_Component) {
                 _react2.default.createElement(
                   "h4",
                   { className: "price" },
-                  "$30000"
+                  "$30,000"
                 ),
                 _react2.default.createElement(
                   "div",
@@ -520,15 +458,72 @@ var Details = function (_Component) {
                       null,
                       "6 Speed Automatic"
                     )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Vin"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "sdfjkgnskdngs"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Milage"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "30054"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Transmission"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "6 Speed Automatic"
+                    )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "discription" },
+                  { className: "description" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Description"
+                  ),
                   _react2.default.createElement(
                     "p",
                     null,
-                    "The discription goes here"
+                    "Lorem ipsum dolor amet chillwave occupy meggings gluten-free ennui gastropub. Kinfolk truffaut cornhole taiyaki tilde mumblecore readymade godard raw denim vinyl. Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard. "
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    null,
+                    "Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard."
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    null,
+                    "Lorem ipsum dolor amet chillwave occupy meggings gluten-free ennui gastropub. Kinfolk truffaut cornhole taiyaki tilde mumblecore readymade godard raw denim vinyl. Next level copper mug gochujang pop-up, echo park freegan pork belly craft beer bicycle rights waistcoat ennui quinoa. Tote bag kogi cloud bread chartreuse 3 wolf moon put a bird on it lyft farm-to-table tbh disrupt authentic offal knausgaard."
                   )
                 )
               )
@@ -562,7 +557,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -747,7 +742,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -976,6 +971,120 @@ var Listings = function (_Component) {
 }(_react.Component);
 
 exports.default = Listings;
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(14);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = function (_Component) {
+  _inherits(Gallery, _Component);
+
+  function Gallery() {
+    _classCallCheck(this, Gallery);
+
+    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this));
+
+    _this.allImgsLoop = function () {
+      return _this.state.allImgs.map(function (item, i) {
+        return _react2.default.createElement("div", {
+          key: i,
+          className: "thumb-img",
+          style: { backgroundImage: "url('" + item + "')" } });
+      });
+    };
+
+    _this.state = {
+      allImgs: '',
+      currentImg: '',
+      currentIndex: 0
+    };
+    return _this;
+  }
+
+  _createClass(Gallery, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var allImgs = ['https://images.craigslist.org/00B0B_7Hcs8IDfZRQ_600x450.jpg', 'https://images.craigslist.org/00c0c_1kCsr66GjuU_600x450.jpg', 'https://images.craigslist.org/00l0l_17AO1Qfseao_600x450.jpg', 'https://images.craigslist.org/00q0q_iaEg5LkU09t_600x450.jpg', 'https://images.craigslist.org/00j0j_dqaDSnAUbx7_600x450.jpg', 'https://images.craigslist.org/00x0x_igeXh3HgEbP_600x450.jpg'];
+
+      this.setState({
+
+        allImgs: allImgs,
+
+        currentImg: allImgs[this.state.currentIndex]
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          match = _props.match,
+          location = _props.location,
+          history = _props.history;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "gallery" },
+        _react2.default.createElement(
+          "div",
+          { className: "slider" },
+          _react2.default.createElement(
+            "div",
+            { className: "main-img" },
+            _react2.default.createElement(
+              "div",
+              { className: "arrows left-arrow" },
+              "<"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "arrows right-arrow" },
+              ">"
+            ),
+            _react2.default.createElement("div", {
+              className: "img-1",
+              style: {
+                backgroundImage: "url('" + this.state.currentImg + "')" } })
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "thumbnails" },
+          this.allImgsLoop()
+        )
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react.Component);
+
+exports.default = Gallery;
 
 /***/ })
 
