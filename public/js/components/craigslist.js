@@ -412,7 +412,7 @@ var Details = function (_Component) {
                 _react2.default.createElement(
                   "h4",
                   { className: "price" },
-                  "$30,000"
+                  "$35,000"
                 ),
                 _react2.default.createElement(
                   "div",
@@ -1014,8 +1014,31 @@ var Gallery = function (_Component) {
       return _this.state.allImgs.map(function (item, i) {
         return _react2.default.createElement("div", {
           key: i,
+          onClick: _this.clickThumb.bind(null, i),
           className: "thumb-img",
           style: { backgroundImage: "url('" + item + "')" } });
+      });
+    };
+
+    _this.nextBtn = function () {
+      if (_this.state.currentIndex != _this.state.allImgs.length - 1) {
+        _this.setState({
+          currentIndex: _this.state.currentIndex + 1
+        });
+      }
+    };
+
+    _this.prevBtn = function () {
+      if (_this.state.currentIndex != 0) {
+        _this.setState({
+          currentIndex: _this.state.currentIndex - 1
+        });
+      }
+    };
+
+    _this.clickThumb = function (index) {
+      _this.setState({
+        currentIndex: index
       });
     };
 
@@ -1058,18 +1081,18 @@ var Gallery = function (_Component) {
             { className: "main-img" },
             _react2.default.createElement(
               "div",
-              { className: "arrows left-arrow" },
-              "<"
+              { className: "arrows left-arrow", onClick: this.prevBtn },
+              _react2.default.createElement("i", { className: "fas fa-chevron-left" })
             ),
             _react2.default.createElement(
               "div",
-              { className: "arrows right-arrow" },
-              ">"
+              { className: "arrows right-arrow", onClick: this.nextBtn },
+              _react2.default.createElement("i", { className: "fas fa-chevron-right" })
             ),
             _react2.default.createElement("div", {
               className: "img-1",
               style: {
-                backgroundImage: "url('" + this.state.currentImg + "')" } })
+                backgroundImage: "url('" + this.state.allImgs[this.state.currentIndex] + "')" } })
           )
         ),
         _react2.default.createElement(

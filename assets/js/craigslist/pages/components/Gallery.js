@@ -35,6 +35,7 @@ export default class Gallery extends Component {
       return (
         <div
           key={i}
+          onClick = {this.clickThumb.bind(null, i)}
           className="thumb-img"
           style={{ backgroundImage: `url('${item}')` }}>
         </div>
@@ -42,19 +43,40 @@ export default class Gallery extends Component {
     })
   }
 
+  nextBtn = () => {
+    if(this.state.currentIndex != (this.state.allImgs.length -1)) {
+        this.setState({
+        currentIndex: this.state.currentIndex + 1
+      })
+    }
+  }
+
+  prevBtn = () => {
+      if(this.state.currentIndex != 0) {
+        this.setState({
+        currentIndex: this.state.currentIndex - 1
+      })
+    }
+  }
+
+  clickThumb = (index) => {
+    this.setState({
+    currentIndex: index
+    })
+  }
   render() {
     const { match, location, history } = this.props;
     return (
       <div className="gallery">
         <div className="slider">
           <div className="main-img">
-            <div className="arrows left-arrow">{"<"}</div>
-            <div className="arrows right-arrow">{">"}</div>
+            <div className="arrows left-arrow" onClick= {this.prevBtn}><i className="fas fa-chevron-left"></i></div>
+            <div className="arrows right-arrow" onClick= {this.nextBtn}><i className="fas fa-chevron-right"></i></div>
             <div
               className="img-1"
               style={{
                 backgroundImage:
-                  `url('${this.state.currentImg}')`}}>
+                  `url('${this.state.allImgs[this.state.currentIndex]}')`}}>
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default class Details extends Component {
               <div className="details-column">
                 <div className="date">Mar 8th 2018</div>
                 <h3>2013 Jeep Wrangler Rubicon</h3>
-                <h4 className="price">$30,000</h4>
+                <h4 className="price">$35,000</h4>
                   <div className="more-details">
                     <div className="info">
                       <label>Vin</label>
