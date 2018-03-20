@@ -8,6 +8,16 @@ export default class Header extends Component {
       
     }
   }
+
+  componentWillMount() {
+    axios.get('/api/categories')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
   clickedBtn = () => {
     console.log("swag");
   };
